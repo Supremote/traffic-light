@@ -5,7 +5,7 @@ var autoMode = false;
 socket.on('connect', function(data) {
     // Once we're connected to supremote, request to join our remote's room.
     // Make sure the remote's development mode is enabled for this tutorial!
-    socket.emit('join', 'traffic-light');
+    socket.emit('join', 'app_traffic_light');
 });
 
 socket.on('join', function(data) {
